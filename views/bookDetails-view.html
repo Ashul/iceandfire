@@ -1,0 +1,18 @@
+<div ng-controller="bookDetailController as singleBook" ng-init="singleBook.loadBookData()">
+<div ng-repeat="book in singleBook" class="no-repeat-books">
+<h2>{{book.name}}</h2>
+
+<p ng-repeat="author in book.authors"><b>Author</b> :- {{author}}</p>
+<p><b>Pages</b> : {{book.numberOfPages}}</p>
+<p><b>Isbn</b> : {{book.isbn}}</p>
+<p><b>Publisher</b> : {{book.publisher}}</p>
+<p><b>Country</b> : {{book.country}}</p>
+<p><b>Media Type</b> : {{book.mediaType}}</p>
+<p><b>Released</b> : {{book.released | date}}</p>
+<p><b>Book URL</b> : {{book.url}}</p>
+<p><b>Characters</b> : 
+<div >
+    <span ng-repeat="character in book.characters" class="s-character">{{character}}</span></p>
+</div>
+</div>
+</div>

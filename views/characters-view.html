@@ -1,0 +1,21 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-space">
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-space">
+            <h3>Characters</h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 filters">
+             <input type="text" placeholder="Search By Character Name" ng-model="character.name"/>
+        </div>
+    </div>
+<!--repeat character in data[1]-->
+<div class="characters" ng-repeat="character in data[1] | filter:character | orderBy:'name' | orderBy: mainData.orderProp">
+
+<a class="house-link" href="#/characters/{{data[1].indexOf(character)}} ">
+<p>Character Name : <span style="font-size:11px;" ng-if="character.name === ''">Name Not Found</span> {{character.name}}</p>
+<p ng-repeat="alias in character.aliases">Character Aliases  : {{alias}}</p>
+</a>
+
+</div>
+</div>

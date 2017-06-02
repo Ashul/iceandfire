@@ -1,0 +1,37 @@
+<div ng-controller="houseDetailController as singleHouse" ng-init="singleHouse.loadHouseData()">
+    <div ng-repeat="house in singleHouse" class="no-repeat-books">
+<h2>{{house.name}}</h2>
+<p>Region : {{house.region}}</p>
+<p>Coat Of Arams : <span ng-if="house.coatOfArms === ''">Data Not Found</span>{{house.coatOfArms}}</p>
+<p>Words : <span ng-if="house.words === ''">Data Not Found</span>{{house.words}}</p>
+<div style="margin-bottom: 20px;">Titles : 
+    <div ng-repeat="title in house.titles" >
+    <span ng-if="title === ''">Data Not Found</span>
+    <span > {{title}}</span>
+    
+    </div></div>
+<p>Seats : <span ng-repeat="seats in house.seats">{{seats}}</span></p>
+<p>Current Lord : <span ng-if="house.currentLord === ''">Data Not Found</span>{{house.currentLord}}</p>
+<p>Heir : <span ng-if="house.heir === ''">Data Not Found</span>{{house.heir}}</p>
+<p>Overloard : {{house.overlord}}</p>
+<p>Founded : <span ng-if="house.founded === ''">Data Not Found</span>{{house.founded}}</p>
+<p>Founder : <span ng-if="house.founder === ''">Data Not Found</span>{{house.founder}}</p>
+<p>Died Out : <span ng-if="house.diedOut === ''">Data Not Found</span>{{house.diedOut}}</p>
+<p>Ancestral Weapons : {{house.ancestralWeapons}}</p>
+<div style="margin-bottom: 20px;">Cadet Branches :   
+    <div ng-repeat="cadet in house.cadetBranches" >
+    <span ng-if="cadet === ''">Data Not Found</span>
+    <span > {{cadet}}</span>
+    
+    </div></div>
+
+<div style="margin-bottom: 20px;">Sworn Members :  
+    <div ng-repeat="member in house.swornMembers" >
+    <span ng-if="member === ''">Data Not Found</span>
+    <span > {{member}}</span>
+    
+    </div></div>
+
+
+</div>
+</div>

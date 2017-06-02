@@ -1,0 +1,32 @@
+<!--add controller and loadData function-->
+<div ng-controller="mainController as mainData" ng-init="mainData.loadData()">
+
+<!--repeat in mainData-->
+<div ng-repeat="data in mainData " class="no-repeat">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<!--select box for sorting data-->
+     <div class="sel-bg">
+     <select class="form-control" ng-model="mainData.orderProp" >
+     <option value="name" ng-selected="true">Forward</option>
+     <option value="-name" ng-selected="false">Reverse</option>
+     </select>
+     </div>
+<!--end-->
+
+<!--add all books derective-->
+<all-books></all-books>
+<!--end-->
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+<!--add all houses derective-->
+<all-houses></all-houses>
+<!--end-->
+
+<!--add all all-characters derective-->
+<all-characters></all-characters>
+<!--end-->
+</div>
+
+</div>
+</div>

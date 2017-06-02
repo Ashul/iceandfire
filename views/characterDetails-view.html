@@ -1,0 +1,38 @@
+<div ng-controller="characterDetailController as singleCharacter" ng-init="singleCharacter.loadcharacterData()">
+    <div ng-repeat="character in singleCharacter" class="no-repeat-books">
+        <h2>Name : <span ng-if="character.name === ''">Data Not Found</span>{{character.name}}</h2>
+        <p>Gender : <span ng-if="character.gender === ''">Data Not Found</span>{{character.gender}}</p>
+        <p>Culture : <span ng-if="character.culture === ''">Data Not Found</span>{{character.culture}}</p>
+        <p>Born : <span ng-if="character.born === ''">Data Not Found</span>{{character.born}}</p>
+        <p>Died : <span ng-if="character.died === ''">Data Not Found</span>{{character.died}}</p>
+        <p>Titles : {{character.titles}}</p>
+
+         <div style="margin-bottom: 20px;">Allegiances :   
+        <div ng-repeat="aliases in character.aliases" >
+        <span ng-if="aliases === ''">Data Not Found</span>
+        <span > {{aliases}}</span>
+    
+    </div></div>
+
+        <p>Father : <span ng-if="character.father === ''">Data Not Found</span>{{character.father}}</p>
+        <p>Mother : <span ng-if="character.mother === ''">Data Not Found</span>{{character.mother}}</p>
+        <p>Spouse : <span ng-if="character.spouse === ''">Data Not Found</span>{{character.spouse}}</p>
+
+        <div style="margin-bottom: 20px;">Allegiances :   
+        <div ng-repeat="allegiances in character.allegiances" >
+        <span ng-if="allegiances === ''">Data Not Found</span>
+        <span > {{allegiances}}</span>
+    
+    </div></div>
+
+
+
+        <div style="margin-bottom: 20px;">Books :   
+        <div ng-repeat="book in character.books" >
+        <span ng-if="book === ''">Data Not Found</span>
+        <span > {{book}}</span>
+    
+    </div></div>
+
+    </div>
+</div>

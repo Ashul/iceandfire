@@ -1,0 +1,195 @@
+*{margin:0;padding: 0;}
+html,body{width:100%;height: 100%;}
+body{
+    background: #000 url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main-page{
+    width:100%;
+    min-height: 100%;
+    background: rgba(0,0,0,0.8)}
+h3{
+    border-left:3px solid #3dd8ec;
+    padding: 0 10px;}
+
+.main-view{
+    color: #efefef;
+    font-size:16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    }
+.no-repeat{display: none;}
+.no-repeat:nth-child(2){display: block;}
+.no-repeat-books{display: none;}
+.no-repeat-books:nth-child(3){display: block;}
+.filters{margin-top:15px;}
+.filters input{    
+    border: 0;
+    border-radius: 3px;
+    margin-left: 3px;
+    color: #333;
+    padding: 5px;
+    float: right;}
+.no-space{padding: 0 !important;}
+.sel-bg{
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+.book{
+    width: 28%;
+    height: 180px;
+     border-radius: 3px; 
+    float: left;
+    background-size: cover !important;
+    margin: 14px ;
+}
+.book a{color:#3dd8ec;}
+.book a:hover{color:#efefef;text-decoration: none;}
+
+.book a .books{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+.book a .books:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+.book h4{
+    background: rgba(0,0,0,0.8);
+    padding:   10px;
+    font-size:15px;
+    text-align: center;
+    }
+
+.book:nth-child(2){
+    background: url(../img/clash-king.jpg)no-repeat;
+}
+.book:nth-child(3){
+    background: url(../img/dragon.jpg)no-repeat;
+}
+.book:nth-child(4){
+    background: url(../img/crow.jpg)no-repeat;
+}
+.book:nth-child(5){
+    background: url(../img/thrones.jpg)no-repeat;
+}
+.book:nth-child(6){
+    background: url(../img/sword.jpg)no-repeat;
+}
+.book:nth-child(7){
+    background: url(../img/Knight.jpg)no-repeat;
+}
+.book:nth-child(8){
+    background: url(../img/mystry.jpg)no-repeat;
+}
+.book:nth-child(9){
+    background: url(../img/queen.jpg)no-repeat;
+}
+.book:nth-child(10){
+    background: url(../img/prince.jpg)no-repeat;
+}
+.book:nth-child(11){
+    background: url(../img/sworn.jpg)no-repeat;
+}
+
+
+
+
+
+
+
+
+.houses{
+    width: 50%;
+    /* height: 10px; */
+    padding: 10px;
+    /* border-radius: 5px; */
+    float: left;
+    background: rgba(255,255,255,0.1);
+    background-size: cover;
+    /* margin: 10px 6px; */
+    border-bottom: 1px solid #000;
+}
+.characters{
+    width: 48%;
+    /* height: 10px; */
+    padding: 10px;
+    /* border-radius: 5px; */
+    float: left;
+    background: rgba(255,255,255,0.1);
+    background-size: cover;
+    margin-left: 9px;
+    font-size:15px;
+    border-bottom: 1px solid #000;
+
+}
+.s-character{
+    width:30%;
+    float: left;
+    margin: 2px 18px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+.house-link{color:#fff}
+.house-link:hover{color: #3dd8ec}
+
+/*
+.button{background:  rgba(0,0,0,0.8); color: #07dc83;padding: 3px 10px; border-radius: 3px; }
+.rounds{width:100%;float: left; }
+.rounds h2{
+    border-left: 30px solid #07dc83;
+    padding-left: 20px;
+    font-size:20px;
+    border-radius: 20px;
+    font-family: 'Anton', sans-serif;
+
+}
+.matches a{color: #07dc83;}
+.matches ul{list-style: none}
+.matches ul li{
+    background: rgba(0,0,0,0.5);
+    border-left:3px solid orange;
+    padding:20px 20px;
+    width:32%;
+    float: left;
+    margin: 7px;
+}
+.match-details ul{list-style: none;width:60%;margin: 50px auto ;}
+.match-details ul li{
+    background: rgba(0,0,0,0.5);
+    border-top:3px solid orange;
+    padding:20px 20px;
+    width:100%;
+    float: left;
+    margin: 7px;
+}
+.team-stats ul{list-style: none;width:60%; margin: 0px auto ;}
+.team-stats ul li{
+    background: rgba(0,0,0,0.5);
+    border-top:3px solid orange;
+    padding:40px 20px;
+    width: 40%;
+    float: left;
+    margin: 7px;
+}
+.h-color{color: orange}
+.max_height{max-height: 20px;overflow: hidden;}
+.match-date{font-size:13px;text-align: right;}
+.match-date span{color: #a2ffd8}
+.filters{
+    list-style: none;
+    width: 70%;
+    float: right; 
+    background:rgba(0,0,0,0.6);
+    padding: 10px;
+    margin-top: -58px;
+    border-radius:0 0 16px 16px;
+     }
+.filters li{display: inline-block;margin: 5px;}
+.filters input{border-radius:3px;border: 0;padding: 5px;}
+#singleMatch:first-child{display: block;}
+#singleMatch{display: none;}*/
